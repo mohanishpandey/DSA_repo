@@ -64,20 +64,11 @@ public://an access modifier
 int main(){
     cout<<"animal class size:  "<<sizeof(Animal)<<endl;// to track the class atlest pne byte is allocated
     cout<<"A class size:  "<<sizeof(A)<<endl;
-    Car nexon(400); //using static memory allocation the destructor is called automatically
+    Car nexon(400);
     nexon.SetSpeed(40);
     nexon.getSpeed();
     nexon.speedUp();
     nexon.getSpeed();
-    Car *S = new Car(35);//dynamically allocated memory to pointer S in static memory
-    cout<<"the apeed of car S is: "<<endl; 
-    S->getSpeed();
-    S->Brake();
-    cout<<"the apeed of car S (after brake is) is: "<<endl; 
-    S->getSpeed();
-    // since Car S is not deleted automatically we need to delete it by 
-    delete S;
-
     return 0;
 
 }
