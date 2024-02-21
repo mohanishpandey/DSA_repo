@@ -55,6 +55,7 @@ public://an access modifier
     Car( Car &obj){
         speed = obj.speed; 
     }
+    //Destructor (is called for heap allocated classes)
 
     
     
