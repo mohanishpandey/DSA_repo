@@ -47,6 +47,33 @@ class shiro: public Rottwiller {
     }
 };
 
+//MULTIPLE INHERITANCE
+class tigress{
+    public: 
+    int strength= 200;
+    const char gender= 'f';
+    void speaking(){
+        cout<<"growling"<<endl;
+    }
+};
+class lion {
+    public: 
+    const char gender= 'm';
+    int strength= 300;
+    void speaking(){
+        cout<<"roaring"<<endl;
+    }
+
+};
+
+class liger: public tigress, public lion{
+  public:
+    int strength= 400;
+
+};
+
+//In heirarchical, we have two or more child classes from one parent
+
 int main(){
     dog* d = new dog;
     cout<< d->legs<<endl;
@@ -57,7 +84,12 @@ int main(){
     Rottwiller* r1 = new shiro;
     
     r1->bark(); //rottwill's obj. is made if we use virtual keyword in base class the that will make shiro's obj.
-    cout<<r1->legs;
+    cout<<r1->legs << endl;
+
+    liger l1;
+    //l1.speaking(); //telling ambiguous
+    //l1.gender;//telling ambiguous
+    cout<< l1.strength<< endl;
 
     
     
