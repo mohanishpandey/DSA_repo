@@ -1,1 +1,6 @@
-This repo shows some important DSA concepts Which i did using CPP language.
+This repo contains some important DSA concepts Which I learnt using C++ language.<BR>
+The topics which i covered till now are:- <br>
+<ul>
+  <li>OOPS</li>
+  <li>LINKED LIST</li>
+</ul>
