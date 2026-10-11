@@ -4,4 +4,6 @@ The topics which i covered till now are:- <br> <br>
 <ul>
   <li>OOPS</li>
   <li>LINKED LIST</li>
+  <li>Sorting Algorithms</li>
+  <li>Greedy Alrorithms</li>
 </ul>
